@@ -1,0 +1,23 @@
+main {
+  position: absolute;
+  top: 88px;
+  height: 1000px;
+  width: 100%;
+  margin-left: -7px;
+}
+
+main>ul {
+  width: 20%;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 40%;
+}
+
+main>div {
+  width: 100%;
+  background-color: white;
+  opacity: 0.7;
+  bottom: 0px;
+  position: absolute;
+  height: 1000px;
+}
