@@ -1,9 +1,12 @@
+#sidebar {
+  width: 20%;
+}
 main {
   position: absolute;
   top: 88px;
   height: 1000px;
-  width: 100%;
-  margin-left: -7px;
+  width: 80%;
+  margin-right: -7px;
 }
 
 main>ul {

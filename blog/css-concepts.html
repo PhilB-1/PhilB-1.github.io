@@ -3,8 +3,9 @@
   <HEAD>
     <title>CSS-Concepts: Margin, Border, & Padding</title>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/css-concepts.css"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-post.css"/>
   </HEAD>
 
   <body>
@@ -20,25 +21,28 @@
 
       <nav ID="menu">
         <div>
-          <p><span><a href="#"> About Me </a></span><span><a href="blog/index.html"> Blog </a></span><span><a href="#"> Projects </a></span><span><a href="#"> Resume </a></span><span ID="contact"><a href="#"> Contact Me </a></span>
+          <p><span><a href="#"> About Me </a></span><span><a href="index.html"> Blog </a></span><span><a href="#"> Projects </a></span><span><a href="#"> Resume </a></span><span ID="contact"><a href="#"> Contact Me </a></span></p>
         </div>
 
       </nav>
     </header>
 
+    <nav id="sidebar">
+      <div></div>
+      <h2>Other Blog Post</h2>
+      <ul ID="bloglinks">
+        <li><a href="https://github.com/PhilB-1/phase-0/blob/master/week-1/my-website-1-reflection.md">My First Website Reflection</a></li>
+        <li><a href="reflections">Reflections</a></li>
+        <li><a href="tracking-changes-reflection">Tracking Changes Reflection</a></li>
+        <li><a href="arrays-hashes.html">Arrays & Hashes</a></li>
+      </ul>
+      <!-- This is the side navigation panel for other blogs -->
+    </nav>
+
     <main>
       <div></div>
-      <header>
-        <h3>Blog</h3>
-      </header>
-
 
       <!-- This is the portion that will be shown on the individual blog post page -->
-      <nav>
-        <h2>Other Blog Post</h2>
-        <a href=#Previous article>Article Title</a>
-        <!-- This is the side navigation panel for other blogs -->
-      </nav>
 
       <header>
         <h3>CSS-Concepts: Margin, Border, & Padding</h3>
@@ -56,12 +60,12 @@
         <p>Posted by: Phillip Barnett</p>
       </footer>
 
-      <nav>
-        <a href="#Previous"><img src="../imgs/Previous-icon.png" alt="Previous Button"/></a>
+      <nav href="#Previous">
+        <a><img src="../imgs/Previous-icon.png" alt="Previous Button"/></a>
       </nav>
 
-      <nav>
-        <a href="#Next"><img src="../imgs/Next-icon.png" alt="Next Button"/></a>
+      <nav href="#Next">
+        <a><img src="../imgs/Next-icon.png" alt="Next Button"/></a>
       </nav>
 
     </main>

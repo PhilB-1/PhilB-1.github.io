@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <title>CSS-Concepts: Margin, Border, & Padding</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-post.css"/>
+  </HEAD>
+
+  <body>
+    <header>
+      <section ID="name">
+        <h1>Phillip Barnett</h1>
+      </section>
+
+      <nav ID="icons">
+        <a href="https://www.linkedin.com/profile/view?id=AAIAAAS3FYgBvYzE5qwoKTin2V6lu_qqW7as_Yk&trk=nav_responsive_tab_profile"><img ID="linkedin" src="../imgs/linkedin-button.png" alt="Linked In Link Logo"></a>
+        <a href="pbarnett@gmail.com"><img ID="gmail" src="../imgs/Gmail-Logo.png" alt="Email Link Logo"></a>
+      </nav>
+
+      <nav ID="menu">
+        <div>
+          <p><span><a href="#"> About Me </a></span><span><a href="index.html"> Blog </a></span><span><a href="#"> Projects </a></span><span><a href="#"> Resume </a></span><span ID="contact"><a href="#"> Contact Me </a></span>
+        </div>
+
+      </nav>
+    </header>
+
+    <nav id="sidebar">
+      <div></div>
+      <h2>Other Blog Post</h2>
+      <ul ID="bloglinks">
+        <li><a href="https://github.com/PhilB-1/phase-0/blob/master/week-1/my-website-1-reflection.md">My First Website Reflection</a></li>
+        <li><a href="reflections">Reflections</a></li>
+        <li><a href="tracking-changes-reflection">Tracking Changes Reflection</a></li>
+        <li><a href="css-concepts.html">CSS-Concepts: Margin, Border, & Padding</a></li>
+      </ul>
+        <!-- This is the side navigation panel for other blogs -->
+    </nav>
+
+    <main>
+      <div></div>
+
+      <!-- This is the portion that will be shown on the individual blog post page -->
+
+
+      <header>
+        <h3>Arrays & Hashes</h3>
+        <p>January 24th, 2016</p>
+      </header>
+
+      <article>
+        <p>Arrays and hashes allow you to expand the functionality of your code by performing task or accessing a multitude of information quickly. Since hashes are a type of  arrays I’m going to first talk about arrays and expand to hashes. I like to think of them as containers. With a variable it is typically holding one value. These arrays allow you to hold multitude of different items, whether they are numbers or words/sets of words called strings. Having all these items in the same container now makes it easier to access them, as well as easier to manipulate all the information inside with a few lines of code. Arrays generally look like this: [2, 5, 6, 3, 4]. They can contain all numbers like the previous example or they can contain all strings, [“Hi”, “how”, “are”, “you”], or a combination of both, [1, “one”, 2, “two”, “three”, 3]. These arrays can be stored in a variable like such, numbers = [1, 2, 3]. You can even have arrays within an arrays; [[1, 2, 3], [“one”, “two”, “three”]]. Arrays are very diverse and flexible in what they can store. It’s great to see an array, but what if you wanted to access one item in an array to manipulate it or use it in some function. This is very easy to do. All the items in an array are indexed by number and start with 0 for the first item in the array. Looking at our examples of the array “numbers,” to access the first item you would type numbers[0] and that would equal 1. To access the second number in the array you would type in numbers[1], which would yield 2 and so forth and so on.</p>
+        <p>Now that we know a little about arrays let’s expand and talk about hashes. Hashes are arrays, but instead of a simple numerical index for their key in their key value pair you can use anything for the key. This is great for organizing information and building a dictionary you want to access later. Let’s say you have an array called John. The first key might be sex and the value would be male. The next key may be age and the value you would be 20. The next key might be lastname and the value might be doe. You see how you are using this to create associations for information about John. Looking into this hash we can now see that John’s is a male, age 20, and his last name is Doe. You access information in a hash similarly to how you would in a normal array. If you want to use John’s age of 20 you simply would type into your code John[age] that would give you the value of 20. This can be a lot easier to find information that’s stored than it is with a normal array because instead of having to remember an index number, you just have to remember the type of information you want as long as you key is well set-up and defined.</p>
+        <p>One of the best features of an array is the fact that you can iterate over it. What does it mean to iterate? That means you can perform the same process or function to every item within the array. This can be very valuable when you want to either determine information about the array itself, or you want to used the information in the array to create something new. You can do this using methods and loops.</p>
+      </article>
+
+      <footer>
+        <p>Posted by: Phillip Barnett</p>
+      </footer>
+
+      <nav>
+        <a href="#Previous"><img src="../imgs/Previous-icon.png" alt="Previous Button"/></a>
+      </nav>
+
+      <nav>
+        <a href="#Next"><img src="../imgs/Next-icon.png" alt="Next Button"/></a>
+      </nav>
+
+    </main>
+
+    <section>
+      <footer>
+        <!--The site footer that is the same for everypage -->
+      </footer>
+    </section>
+
+  </body>
+
+
+</HTML>
