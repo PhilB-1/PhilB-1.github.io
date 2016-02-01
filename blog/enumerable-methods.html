@@ -15,8 +15,9 @@
       </section>
 
       <nav ID="icons">
+        <a href="https://github.com/PhilB-1"><img ID="github" src="../imgs/GitHub-Mark.png" alt="GitHub Link Logo"></a>
         <a href="https://www.linkedin.com/profile/view?id=AAIAAAS3FYgBvYzE5qwoKTin2V6lu_qqW7as_Yk&trk=nav_responsive_tab_profile"><img ID="linkedin" src="../imgs/linkedin-button.png" alt="Linked In Link Logo"></a>
-        <a href="pbarnett@gmail.com"><img ID="gmail" src="../imgs/Gmail-Logo.png" alt="Email Link Logo"></a>
+        <a href="mailto:pbarnett@gmail.com"><img ID="gmail" src="../imgs/Gmail-Logo.png" alt="Email Link Logo"></a>
       </nav>
 
       <nav ID="menu">
@@ -35,6 +36,7 @@
         <li><a href="reflections">Reflections</a></li>
         <li><a href="tracking-changes-reflection">Tracking Changes Reflection</a></li>
         <li><a href="css-concepts.html">CSS-Concepts: Margin, Border, & Padding</a></li>
+        <li><a href="arrays-hashes.html">Arrays & Hashes</a>
       </ul>
         <!-- This is the side navigation panel for other blogs -->
     </nav>
@@ -46,25 +48,27 @@
 
 
       <header>
-        <h3>Arrays & Hashes</h3>
-        <p>January 24th, 2016</p>
+        <h3>Enumerables & The Map Method</h3>
+        <p>January 30th, 2016</p>
       </header>
 
       <article>
         <p>Enumerables are a valuable tool built into the Ruby class structure. It also one of the few methods you don’t immediately understand by just looking at the name. Enumerables allow to search for particular things in a collection of items. It can be an array, a hash, a set, or a range. The foundation of what makes enumerable work is the each method. For those that don’t remember each, it allows you to work with each piece of information in the whatever collection you are working with and perform the same task, or code block, to that information. Enumerable uses each to organize and separate the information so that you can call enumerable methods on objects created within that class. They will allow you to gather very value information about whatever collection you are working with, such as what strings start with this letter, which numbers are greater or less than a particular number, what’s the first item that meets either of those criteria. You can map the first so many characters of the strings. You can even reject  items that meet a certain criteria. The great thing about enumerables is that they let you quickly locate a particular piece, or pieces, of information within a collection without having to do long iterations to find it yourself. Using enumerable can save you plenty of steps and lines of code. Below is a list of enumerables you can use.</p>
-        <p>Now that we know a little about arrays let’s expand and talk about hashes. Hashes are arrays, but instead of a simple numerical index for their key in their key value pair you can use anything for the key. This is great for organizing information and building a dictionary you want to access later. Let’s say you have an array called John. The first key might be sex and the value would be male. The next key may be age and the value you would be 20. The next key might be lastname and the value might be doe. You see how you are using this to create associations for information about John. Looking into this hash we can now see that John’s is a male, age 20, and his last name is Doe. You access information in a hash similarly to how you would in a normal array. If you want to use John’s age of 20 you simply would type into your code John[age] that would give you the value of 20. This can be a lot easier to find information that’s stored than it is with a normal array because instead of having to remember an index number, you just have to remember the type of information you want as long as you key is well set-up and defined.</p>
-        <p>One of the best features of an array is the fact that you can iterate over it. What does it mean to iterate? That means you can perform the same process or function to every item within the array. This can be very valuable when you want to either determine information about the array itself, or you want to used the information in the array to create something new. You can do this using methods and loops.</p>
+        <img ID="enumerable-methods" src="../imgs/enumerable-methods.png" alt="Enumerable Methods">
+        <p>One very helpful enumerable is map. It is very similar and is used just like the each method, but unlike the each method will allow you to return a different value. When you use each it will always return the original array. Map, however will let you return the value created through the code block used with map. Looking at the example below you will see an enumerable created with the class rainbow. You can see how similar map is to each, but you can also see how it returns the first three letters of each string as a new array. If you were using the each method you would still have the original array returned. When developing it’s all about using what is right for the situation at hand and map is useful when you want to use the each method, but want to return something different.</p>
+        <img ID="enumerable-include" src="../imgs/enumerable-include.png" alt"Using Enumerables">
+        <img ID="enumerable-map" src="../imgs/enumerable-map.png" alt="Map Method">
       </article>
 
       <footer>
         <p>Posted by: Phillip Barnett</p>
       </footer>
 
-      <nav>
-        <a href="#Previous"><img src="../imgs/Previous-icon.png" alt="Previous Button"/></a>
+      <nav ID="enumerable-prev">
+        <a href="arrays-hashes.html"><img src="../imgs/Previous-icon.png" alt="Previous Button"/></a>
       </nav>
 
-      <nav>
+      <nav ID="enumerable-next">
         <a href="#Next"><img src="../imgs/Next-icon.png" alt="Next Button"/></a>
       </nav>
 
