@@ -82,3 +82,26 @@ main>footer {
   position: relative;
   top: -980px;
 }
+
+#enumerable-methods {
+  width: 50%;
+}
+
+#enumerable-include {
+  width: 10%;
+}
+
+#enumerable-map {
+  width: 30%;
+}
+
+#enumerable-prev {
+  top: -950px;
+  width: 10%;
+  margin-left: 40%;
+  margin-right: 2%;
+}
+
+#enumerable-next {
+  top: -950px;
+}
