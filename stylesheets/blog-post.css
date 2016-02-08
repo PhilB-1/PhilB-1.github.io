@@ -17,6 +17,7 @@
 #sidebar>h2 {
   position: relative;
   top: -1000px;
+  margin-top: 5px;
 }
 
 #sidebar>ul {
@@ -52,6 +53,7 @@ main>header {
 
 main>header>h3 {
   font-size: 30px;
+  margin-top: 5px
 }
 
 main>nav {
