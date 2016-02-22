@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <title>SQL Cheat Sheet</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog-post.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/ruby-classes.css"/>
+  </HEAD>
+
+  <body>
+    <header>
+      <section ID="name">
+        <h1>Phillip Barnett</h1>
+      </section>
+
+      <nav ID="icons">
+        <a href="https://github.com/PhilB-1"><img ID="github" src="imgs/GitHub-Mark.png" alt="GitHub Link Logo"></a>
+        <a href="https://www.linkedin.com/profile/view?id=AAIAAAS3FYgBvYzE5qwoKTin2V6lu_qqW7as_Yk&trk=nav_responsive_tab_profile"><img ID="linkedin" src="imgs/linkedin-button.png" alt="Linked In Link Logo"></a>
+        <a href="mailto:pbarnett@gmail.com"><img ID="gmail" src="imgs/Gmail-Logo.png" alt="Email Link Logo"></a>
+      </nav>
+
+      <nav ID="menu">
+          <p></span<p><span><a href="about-me.html"> About Me </a></span><span><a href="blog/index.html"> Blog </a></span><span><a href="#"> Projects </a></span><span><a href="#"> Resume </a></span><span ID="contact"><a href="contact-me.html"> Contact Me </a></p>
+
+      </nav>
+    </header>
+
+    <nav id="sidebar">
+      <div></div>
+      <h2>Other Cheat Sheets</h2>
+      <!-- <ul ID="bloglinks">
+        <li><a href="https://github.com/PhilB-1/phase-0/blob/master/week-1/my-website-1-reflection.md">My First Website Reflection</a></li>
+        <li><a href="reflections">Reflections</a></li>
+        <li><a href="tracking-changes-reflection">Tracking Changes Reflection</a></li>
+        <li><a href="css-concepts.html">CSS-Concepts: Margin, Border, & Padding</a></li>
+        <li><a href="arrays-hashes.html">Arrays & Hashes</a>
+        <li><a href="enumerables-methods.html">Enumerables & Methods</a>
+        <li><a href="objects-hashes.html">Javascript Objects & Ruby Hashes</a>
+      </ul> -->
+        <!-- This is the side navigation panel for other blogs -->
+    </nav>
+
+    <main>
+      <div></div>
+
+      <!-- This is the portion that will be shown on the individual blog post page -->
+
+
+      <header>
+        <h3>SQL Cheat Sheet</h3>
+      </header>
+
+      <article>
+        <h4>In Terminal</h4>
+
+        <ul>
+          <li>type sqlite3 <filename> to work in a database</li>
+          <li>type .exit to exit</li>
+          <li>type .schema to view the schema</li>
+          <li>type .help for help</li>
+        </ul>
+
+        <h4>Data Types</h4>
+        <ul>
+          <li>Integer, a positive or negative whole number</li>
+          <li>Text, a text string</li>
+          <li>Date, the date formatted as YYYY-MM-DD for the year, month, and day</li>
+          <li>Real, a decimal value</li>
+        </ul>
+
+        <h4>Clauses</h4>
+        <h5>Commands. They are written in all caps, and perform specific task in SQL</h5>
+        <ul>
+          <li>Ex: CREATE TABLE celebs (id INTEGER, name TEXT, age INTEGER);</li>
+          <li>INSERT INTO celebs (id, name, age) VALUES (1, 'Justin Bieber', 21); - Inserts a row</li>
+          <li>SELECT * FROM celebs; - lets you view the entire table</li>
+          <ul>
+            <li>Replace * with the column name to only see that column</li>
+            <li>You can query more than one column by separating the names with a comma.</li>
+            <li>DISTINCT genre - queries the unique items in that column</li>
+          </ul>
+          <li>UPDATE celebs</li>
+          <li>SET age = 22 WHERE id = 1;</li>
+          <li>ALTER TABLE celebs ADD COLUMN twitter_handle TEXT;</li>
+          <li>DELETE FROM celebs WHERE twitter_handle IS NULL; - will delete all rows where the condition is met, in this case null in the twitter_handle column</li>
+          <li>SELECT * FROM movies WHERE name LIKE 'Se_en'; - LIKE is an operator used with the WHERE clause to find a certain bit of information. LIKE is not case sensitive. (_) is a wildcard that allows you to search for a word with any character in the _ place.</li>
+          <li>SELECT * FROM movies WHERE name LIKE '%man%'; - % is another operator. When surrounding a word searches for items containing those characters</li>
+          <li>SELECT * FROM movies WHERE name LIKE 'a%'; - When % is at the end, it search for items starting with those characters. %a would search for items ending with a.</li>
+          <li>SELECT * FROM movies WHERE name BETWEEN 'A' AND 'J'; - BETWEEN is an operator that queries all items that start with the first character and up to, but not including the second character.</li>
+          <li>SELECT * FROM movies
+          WHERE year BETWEEN 1990 AND 2000
+          AND genre = 'comedy'; - AND is used to add another condition when querying</li>
+          <li>SELECT * FROM movies
+          WHERE genre = 'comedy'
+          OR year < 1980; - OR is used to include more than one conditions in a query</li>
+          <li>SELECT * FROM movies
+          ORDER BY imdb_rating DESC; - ORDER BY lets you order your content by DESC for descending or ASC for ascending</li>
+          <li>SELECT * FROM movies
+          ORDER BY imdb_rating ASC
+          LIMIT 3; - LIMIT returns only that many queries</li>
+        </ul>
+
+        <h4>Operators</h4>
+        <h5>Commonly used when using the WHERE clause</h5>
+        <ul>
+          <li>= equals</li>
+          <li>!= not equals</li>
+          <li>> greater than</li>
+          <li>< less than</li>
+          <li>>= greater than or equal to</li>
+          <li><= less than or equal to</li>
+
+        </ul>
+
+      </article>
+
+      <!--
+      <nav ID="Previous">
+        <a href="enumerables-methods.html"><img src="../imgs/Previous-icon.png" alt="Previous Button"/></a>
+      </nav>
+
+      <nav ID="Next">
+        <a href="#objects-hashes.html"><img src="../imgs/Next-icon.png" alt="Next Button"/></a>
+      </nav>
+    -->
+
+    </main>
+
+    <section>
+      <footer>
+        <!--The site footer that is the same for everypage -->
+      </footer>
+    </section>
+
+  </body>
+
+
+</HTML>

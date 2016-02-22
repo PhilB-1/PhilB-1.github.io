@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <title>Test-Driven Development</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-post.css"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/ruby-classes.css"/>
+  </HEAD>
+
+  <body>
+    <header>
+      <section ID="name">
+        <h1>Phillip Barnett</h1>
+      </section>
+
+      <nav ID="icons">
+        <a href="https://github.com/PhilB-1"><img ID="github" src="../imgs/GitHub-Mark.png" alt="GitHub Link Logo"></a>
+        <a href="https://www.linkedin.com/profile/view?id=AAIAAAS3FYgBvYzE5qwoKTin2V6lu_qqW7as_Yk&trk=nav_responsive_tab_profile"><img ID="linkedin" src="../imgs/linkedin-button.png" alt="Linked In Link Logo"></a>
+        <a href="mailto:pbarnett@gmail.com"><img ID="gmail" src="../imgs/Gmail-Logo.png" alt="Email Link Logo"></a>
+      </nav>
+
+      <nav ID="menu">
+          <p></span<p><span><a href="../about-me.html"> About Me </a></span><span><a href="index.html"> Blog </a></span><span><a href="#"> Projects </a></span><span><a href="#"> Resume </a></span><span ID="contact"><a href="../contact-me.html"> Contact Me </a></p>
+
+      </nav>
+    </header>
+
+    <nav id="sidebar">
+      <div></div>
+      <h2>Other Blog Post</h2>
+      <ul ID="bloglinks">
+        <li><a href="https://github.com/PhilB-1/phase-0/blob/master/week-1/my-website-1-reflection.md">My First Website Reflection</a></li>
+        <li><a href="reflections">Reflections</a></li>
+        <li><a href="tracking-changes-reflection">Tracking Changes Reflection</a></li>
+        <li><a href="css-concepts.html">CSS-Concepts: Margin, Border, & Padding</a></li>
+        <li><a href="arrays-hashes.html">Arrays & Hashes</a></li>
+        <li><a href="enumerables-methods.html">Enumerables & Methods</a></li>
+        <li><a href="ruby-classes.html">Ruby Classes</a></li>
+        <li><a href="objects-hashes.html">JavaScript Objects & Ruby Hashes</a></li>
+      </ul>
+        <!-- This is the side navigation panel for other blogs -->
+    </nav>
+
+    <main>
+      <div></div>
+
+      <!-- This is the portion that will be shown on the individual blog post page -->
+
+
+      <header>
+        <h3>Test Driven Development</h3>
+        <p>February 21th, 2016</p>
+      </header>
+
+      <article>
+        <p>When you are writing tons of lines of code you may want to have a way of making sure it is doing what you want it to do. Now we could run the code with different parameters, but that may not work with every scenario and is not the best way of displaying. When you want clear and coherent descriptions of whether you code is working properly you'll want to write some codes. This is called test driven development. You write test to ensure that you code is working problem and you develop and refactor your code based on these test. These test usually also print our a state if they fail, so that it will easily describe to anyone what was supposed to happen, but didn't. In our lessons we've seen two examples of test, one for Ruby called rspec, and one for JavaScript called assert. If you look below you will see an example of each.</p>
+
+        <div>
+          <code>require_relative 'my_solution'
+
+          describe Die do
+            describe '#initialize' do
+              it 'expects a single argument' do
+                expect(Die.instance_method(:initialize).arity).to eq 1
+              end
+
+              it 'raises an ArgumentError if list of labels is empty' do
+                expect { Die.new([]) }.to raise_error(ArgumentError)
+              end
+            end</code>
+
+
+
+          <!--
+          <code>  second: 2,</code>
+          <code>  third: 3,</code>
+          <code>}</code>
+        -->
+        </div>
+
+        <p>This first example is an example of a Ruby rspec file. The first require relative is referring to the solution file you are testing. Describe refers to the class or method you are testing. It is followed by a small string of what you are expecting to happen. The expect line then runs a piece of code to test that the thing it expects happen actually happens.</p>
+
+        <div>
+          <code>function assert(test, message, test_number) {
+          if (!test) {
+            console.log(test_number + "false");
+            throw "ERROR: " + message;
+          }
+          console.log(test_number + "true");
+          return true;
+        }
+
+        assert(
+          (adam instanceof Object),
+          "The value of adam should be an Object.",
+          "1. "
+          )</code>
+
+
+          <!--
+          <code>sample = {</code>
+          <code>  first: 1</code>
+          <code>  second: 2</code>
+          <code>  third: 3</code>
+          <code>}</code>
+        -->
+        </div>
+
+        <p>Now we will discuss our example of JavaScript. The first part in any JavaScript test is to create your assert function. This function accepts a few arguments and allows you run all your test by calling the assert function. It describes that if the test doesn't work, print error, test number, false, and the message of what failed to the console. Otherwise it will print the test number and true. The next section is the actual test. It has the arguments needed for the above function and the actual test in the parenthesis. In this example it is checking to see if adam is an object. These test are great for when your code runs, but is not doing what it is intended to do.</p>
+
+      </article>
+
+      <footer>
+        <p>Posted by: Phillip Barnett</p>
+      </footer>
+
+      <nav ID="Previous">
+        <a href="objects-hashes.html"><img src="../imgs/Previous-icon.png" alt="Previous Button"/></a>
+      </nav>
+
+      <nav ID="Next">
+        <a href="#Next"><img src="../imgs/Next-icon.png" alt="Next Button"/></a>
+      </nav>
+
+    </main>
+
+    <section>
+      <footer>
+        <!--The site footer that is the same for everypage -->
+      </footer>
+    </section>
+
+  </body>
+
+
+</HTML>
