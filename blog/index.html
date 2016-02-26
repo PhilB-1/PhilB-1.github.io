@@ -4,29 +4,31 @@
     <title>Blog</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-post.css"/>
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css"/>
   </head>
   <body>
 
     <header>
       <section ID="name">
-        <h1>Phillip Barnett</h1>
+        <a href="index.html"><h1>Phillip Barnett: Web Developer</h1></a>
       </section>
 
       <nav ID="icons">
-        <a href="https://github.com/PhilB-1"><img ID="github" src="imgs/GitHub-Mark.png" alt="GitHub Link Logo"></a>
-        <a href="https://www.linkedin.com/profile/view?id=AAIAAAS3FYgBvYzE5qwoKTin2V6lu_qqW7as_Yk&trk=nav_responsive_tab_profile"><img ID="linkedin" src="imgs/linkedin-button.png" alt="Linked In Link Logo"></a>
-        <a href="mailto:pbarnett@gmail.com"><img ID="gmail" src="imgs/Gmail-Logo.png" alt="Email Link Logo"></a>
+        <a href="https://github.com/PhilB-1"><img ID="github" src="../imgs/GitHub-Mark.png" alt="GitHub Link Logo"></a>
+        <a href="https://www.linkedin.com/profile/view?id=AAIAAAS3FYgBvYzE5qwoKTin2V6lu_qqW7as_Yk&trk=nav_responsive_tab_profile"><img ID="linkedin" src="../imgs/linkedin-button.png" alt="Linked In Link Logo"></a>
+        <a href="mailto:pbarnett@gmail.com"><img ID="gmail" src="../imgs/Gmail-Logo.png" alt="Email Link Logo"></a>
       </nav>
 
       <nav ID="menu">
-        <p></span<p><span><a href="../about-me.html"> About Me </a></span><span><a href="index.html"> Blog </a></span><span><a href="#"> Projects </a></span><span><a href="#"> Resume </a></span><span ID="contact"><a href="../contact-me.html"> Contact Me </a></p>
+        <p></span<p><span><a href="../about-me.html"> About Me </a></span><span><a href="index.html"> Blog </a></span><span><a href="../projects/index.html"> Projects </a></span><span><a href="#"> Resume </a></span><span ID="contact"><a href="../contact-me.html"> Contact Me </a></p>
       </nav>
     </header>
 
-    <main>
+    <nav id="sidebar">
       <div></div>
-      <h2>Blog Post</h2>
+      <!--
+      <h2>Other Blog Post</h2>
       <ul ID="bloglinks">
         <li><a href="https://github.com/PhilB-1/phase-0/blob/master/week-1/my-website-1-reflection.md">My First Website Reflection</a></li>
         <li><a href="reflections">Reflections</a></li>
@@ -35,6 +37,32 @@
         <li><a href="arrays-hashes.html">Arrays & Hashes</a></li>
         <li><a href="enumerables-methods.html">Enumerables & Methods</a></li>
         <li><a href="ruby-classes.html">Ruby Classes</a></li>
+        <li><a href="objects-hashes.html">JavaScript Objects & Ruby Hashes</a></li>
+      </ul>
+      -->
+        <!-- This is the side navigation panel for other blogs -->
+    </nav>
+
+    <main>
+      <div></div>
+      <h2>Blog Post</h2>
+      <ul ID="bloglinks">
+        <li>January 2016</li>
+        <ul>
+          <!-- <li><a href="https://github.com/PhilB-1/phase-0/blob/master/week-1/my-website-1-reflection.md">My First Website Reflection</a></li>
+          <li><a href="reflections">Reflections</a></li>
+          <li><a href="tracking-changes-reflection">Tracking Changes Reflection</a></li> -->
+          <li><a href="git.html">Using the Command Line & Getting Git</a></li>
+          <li><a href="css-concepts.html">CSS-Concepts: Margin, Border, & Padding</a></li>
+          <li><a href="arrays-hashes.html">Arrays & Hashes</a></li>
+          <li><a href="enumerables-methods.html">Enumerables & Methods</a></li>
+        </ul>
+        <li ID="month">February 2016</li>
+        <ul>
+          <li><a href="ruby-classes.html">Ruby Classes</a></li>
+          <li><a href="objects-hashes.html">JavaScript Objects & Ruby Hashes</a></li>
+          <li><a href="tech.html">Test Driven Development</a></li>
+        </ul>
       </ul>
     </main>
   </body>

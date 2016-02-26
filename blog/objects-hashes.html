@@ -12,7 +12,7 @@
   <body>
     <header>
       <section ID="name">
-        <h1>Phillip Barnett</h1>
+        <a href="index.html"><h1>Phillip Barnett: Web Developer</h1></a>
       </section>
 
       <nav ID="icons">
@@ -31,9 +31,10 @@
       <div></div>
       <h2>Other Blog Post</h2>
       <ul ID="bloglinks">
-        <li><a href="https://github.com/PhilB-1/phase-0/blob/master/week-1/my-website-1-reflection.md">My First Website Reflection</a></li>
+        <!-- <li><a href="https://github.com/PhilB-1/phase-0/blob/master/week-1/my-website-1-reflection.md">My First Website Reflection</a></li>
         <li><a href="reflections">Reflections</a></li>
-        <li><a href="tracking-changes-reflection">Tracking Changes Reflection</a></li>
+        <li><a href="tracking-changes-reflection">Tracking Changes Reflection</a></li> -->
+        <li><a href="git.html">Using the Command Line & Getting Git</a></li>
         <li><a href="css-concepts.html">CSS-Concepts: Margin, Border, & Padding</a></li>
         <li><a href="arrays-hashes.html">Arrays & Hashes</a></li>
         <li><a href="enumerables-methods.html">Enumerables & Methods</a></li>
@@ -50,7 +51,7 @@
 
 
       <header>
-        <h3>Ruby Classes</h3>
+        <h3>Javascript Objects & Ruby Hashes</h3>
         <p>February 14th, 2016</p>
       </header>
 
@@ -58,19 +59,19 @@
         <p>When starting to interact with and learn javascript I began to notice a lot of similarities. What was even more interesting were the difference some of the similarities have. Most often in syntax, but even in how the function. This can be most easily noticed with objects in javascript and hashes in ruby. Below you can see an object and a hash with identical contents. As you can see they look almost exactly the same. If you used symbol notation with the ruby hash, the only difference would be the syntax var at the beginning of the javascript object.</p>
 
         <div>
-          <code>var sample = {</code>
-          <code>  first: 1,</code>
-          <code>  second: 2,</code>
-          <code>  third: 3,</code>
-          <code>}</code>
+          <code>var sample = {</code><br>
+          <code>  first: 1,</code><br>
+          <code>  second: 2,</code><br>
+          <code>  third: 3,</code><br>
+          <code>}</code><br><br>
         </div>
 
         <div>
-          <code>sample = {</code>
-          <code>  first: 1</code>
-          <code>  second: 2</code>
-          <code>  third: 3</code>
-          <code>}</code>
+          <code>sample = {</code><br>
+          <code>  first: 1</code><br>
+          <code>  second: 2</code><br>
+          <code>  third: 3</code><br>
+          <code>}</code><br>
         </div>
 
         <p>Now the first difference we will talk about will the how to access the values associated with keys(ruby) and properties(javascript). In ruby you use brackets [] to access something in the hash, for example sample[first] = 1. In javascript you use a dot (.), for example sample.first = 1. Another convenient similarity is how to add new keys or properties to your hash or object. You can do it explicitly by simply type sample[fourth] = 4 or sample.fourth = 4. With this you can also nest arrays or other hashes/objects within you hash/object. One of the main differences between objects and hashes is that you can store functions within your object that will be called on that object allowing you to manipulate it in some fashion. You cannot store methods inside of a hash in ruby. You can store a hash in a method to manipulate the information stored there, but that is it.</p>
