@@ -1,30 +1,94 @@
-<!DOCTYPE html>
-<head>
-  <title>Phil Barnetts DBC Blog</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
-</head>
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <title>Understanding the Command Line and Getting Git</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-post.css"/>
+  </HEAD>
 
-<main>
-  <h1>Understanding the Command Line and Getting Git</h1>
-  <h2></h2>
-  <h4>January 1, 2016</h4>
+  <body>
+    <header>
+      <section ID="name">
+        <a href="index.html"><h1>Phillip Barnett: Web Developer</h1></a>
+      </section>
 
-  <section>
-    <p>
-      I know for many people the command line can be a confusing and scary thing. It was for me when I first time I saw it, and sometimes can still be as I am still learning and figuring things out. It's completely different from the interactive interface you've become accustomed to. I remember the first time I opened terminal and typed in all these weird codes to unlock and root my phone. I had know idea what I was typing in and was praying the instructions I was following were right. Now that I am a bit more familiar I understand how similar it is to what I've done before and how it all relates, and soon enough, so will you.
-    </p>
-    <p>
-        The command line is the most basic and fundamental way to interact with your computer. There's no windows, tabs, or a mouse to use, just your keyboard and commands. While it can be intimidating this makes navigating and working in your system much faster and more effecient. The great thing is that you navigate using the same file system you've already been accustomed to, just without all the pretty design. Another name for the command line is the shell which you use commands to navigate. Commands tell the shell what task to perform. I believe the most important commands to be cd, pwd, mkdir, ls, grep, vi, cat, and man. Using the shell is foundationally navigating through directories which means you must know how to navigate through them. Thats why cd, pwd, and mkdir are so important because to need to be able to navigate to a directory, know what directory you are in, and create a new directory if needed. In the same idea, ls is important because you will always need to see what files and directories are within the directory you are using or plan to use so you can navigate and work with the correct file. When working in an environment without a robust and polished user interface search is very valuable, thus the grep command being so useful. Once a file is found, you will need to see what the contents are and using the cat command to print them out is a great way to do that. With the shell being all about efficiency the vi command is a necessity. With most of our work being creating code to be run by a program, it is invaluable to have an editor right within the shell without having to exit and open another program to create or edit a file. And lastly man, which will give you detailed information about every command. Often times we will not remember exactly what a command does or what are all the options that accompany it, but this command allows us to easily access that information.
-    </p>
-    <p>
-        Now that you know a little about navigating the command line we can talk about git. Git it used to do version control on a project, in this case code, you may be working on. Version control allows you to easily keep track of changes on the same file/files while also allowing you to easily go back to a previous version. This is even more important when you are collaborating with others. This helps for communicating changes and allows all parties to see what is happening. Think of using Google Docs and how it tracks the changes for a document. The difference is that git will allow you to do this with any file. So what exactly is git? Git is an amazing piece of software that lives locally on your computer and accessed through the command line. Git allows for version control of a project and can be used with anything from photoshop projects to word documents, but is generally used to track changes in code. Git is very powerful, but also very simplistic and very fast, which is one of the reasons it has become so popular with so many developers. Different versions are tracked through commits, which records all the changes made to a project and allows the person making the changes to add a description of what is being done. This allows developers to work on different parts of a project by copying the commit and working on a new branch and merging them back to the master branch once their portion is complete. This allows each developer to make changes while simultaneously seeing each other's changes. It also allows you to easily go back and find mistakes or revert to a less buggy version should problems arise. That’s why it is important to commit often. While git lives locally on your computer, GitHub allows you to host a repository on the internet for better collaboration and immediate access to the repository of a project by all members of a development team. This allows you to merge and pull a version without having to know whether another developer's machine is on and able to be accessed. You will still need to utilize git to perform all of your actions, but know you can manage a copy of the repository that is hosted on GitHub.
-    </p>
+      <nav ID="icons">
+        <a href="https://github.com/PhilB-1"><img ID="github" src="../imgs/GitHub-Mark.png" alt="GitHub Link Logo"></a>
+        <a href="https://www.linkedin.com/profile/view?id=AAIAAAS3FYgBvYzE5qwoKTin2V6lu_qqW7as_Yk&trk=nav_responsive_tab_profile"><img ID="linkedin" src="../imgs/linkedin-button.png" alt="Linked In Link Logo"></a>
+        <a href="mailto:pbarnett@gmail.com"><img ID="gmail" src="../imgs/Gmail-Logo.png" alt="Email Link Logo"></a>
+      </nav>
 
-    <p>
-      I hope this has been a helpful introduction to the command line and git, and you are now anxious to embark on your own coding journey.
-    </p>
+      <nav ID="menu">
+          <p></span<p><span><a href="../about-me.html"> About Me </a></span><span><a href="index.html"> Blog </a></span><span><a href="../projects/index.html"> Projects </a></span><span><a href="#"> Resume </a></span><span ID="contact"><a href="../contact-me.html"> Contact Me </a></p>
 
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-</main>
+      </nav>
+    </header>
+
+    <nav id="sidebar">
+      <div></div>
+      <h2>Other Blog Post</h2>
+      <ul ID="bloglinks">
+        <!-- <li><a href="https://github.com/PhilB-1/phase-0/blob/master/week-1/my-website-1-reflection.md">My First Website Reflection</a></li>
+        <li><a href="reflections">Reflections</a></li>
+        <li><a href="tracking-changes-reflection">Tracking Changes Reflection</a></li> -->
+        <li><a href="git.html">Using the Command Line & Getting Git</a></li>
+        <li><a href="css-concepts.html">CSS-Concepts: Margin, Border, & Padding</a></li>
+        <li><a href="arrays-hashes.html">Arrays & Hashes</a></li>
+        <li><a href="ruby-classes.html">Ruby Classes</a></li>
+        <li><a href="objects-hashes.html">JavaScript Objects & Ruby Hashes</a></li>
+        <li><a href="tech.html">Test Driven Development</a></li>
+      </ul>
+        <!-- This is the side navigation panel for other blogs -->
+    </nav>
+
+    <main>
+      <div></div>
+      <header>
+        <h3>Understanding the Command Line and Getting Git</h3>
+        <p>January 1, 2016</p>
+      </header>
+
+      <article>
+        <p>
+          I know for many people the command line can be a confusing and scary thing. It was for me when I first time I saw it, and sometimes can still be as I am still learning and figuring things out. It's completely different from the interactive interface you've become accustomed to. I remember the first time I opened terminal and typed in all these weird codes to unlock and root my phone. I had know idea what I was typing in and was praying the instructions I was following were right. Now that I am a bit more familiar I understand how similar it is to what I've done before and how it all relates, and soon enough, so will you.
+        </p>
+        <p>
+            The command line is the most basic and fundamental way to interact with your computer. There's no windows, tabs, or a mouse to use, just your keyboard and commands. While it can be intimidating this makes navigating and working in your system much faster and more effecient. The great thing is that you navigate using the same file system you've already been accustomed to, just without all the pretty design. Another name for the command line is the shell which you use commands to navigate. Commands tell the shell what task to perform. I believe the most important commands to be cd, pwd, mkdir, ls, grep, vi, cat, and man. Using the shell is foundationally navigating through directories which means you must know how to navigate through them. Thats why cd, pwd, and mkdir are so important because to need to be able to navigate to a directory, know what directory you are in, and create a new directory if needed. In the same idea, ls is important because you will always need to see what files and directories are within the directory you are using or plan to use so you can navigate and work with the correct file. When working in an environment without a robust and polished user interface search is very valuable, thus the grep command being so useful. Once a file is found, you will need to see what the contents are and using the cat command to print them out is a great way to do that. With the shell being all about efficiency the vi command is a necessity. With most of our work being creating code to be run by a program, it is invaluable to have an editor right within the shell without having to exit and open another program to create or edit a file. And lastly man, which will give you detailed information about every command. Often times we will not remember exactly what a command does or what are all the options that accompany it, but this command allows us to easily access that information.
+        </p>
+        <p>
+            Now that you know a little about navigating the command line we can talk about git. Git it used to do version control on a project, in this case code, you may be working on. Version control allows you to easily keep track of changes on the same file/files while also allowing you to easily go back to a previous version. This is even more important when you are collaborating with others. This helps for communicating changes and allows all parties to see what is happening. Think of using Google Docs and how it tracks the changes for a document. The difference is that git will allow you to do this with any file. So what exactly is git? Git is an amazing piece of software that lives locally on your computer and accessed through the command line. Git allows for version control of a project and can be used with anything from photoshop projects to word documents, but is generally used to track changes in code. Git is very powerful, but also very simplistic and very fast, which is one of the reasons it has become so popular with so many developers. Different versions are tracked through commits, which records all the changes made to a project and allows the person making the changes to add a description of what is being done. This allows developers to work on different parts of a project by copying the commit and working on a new branch and merging them back to the master branch once their portion is complete. This allows each developer to make changes while simultaneously seeing each other's changes. It also allows you to easily go back and find mistakes or revert to a less buggy version should problems arise. That’s why it is important to commit often. While git lives locally on your computer, GitHub allows you to host a repository on the internet for better collaboration and immediate access to the repository of a project by all members of a development team. This allows you to merge and pull a version without having to know whether another developer's machine is on and able to be accessed. You will still need to utilize git to perform all of your actions, but know you can manage a copy of the repository that is hosted on GitHub.
+        </p>
+
+        <p>
+          I hope this has been a helpful introduction to the command line and git, and you are now anxious to embark on your own coding journey.
+        </p>
+
+          <!-- copy and paste as many sections as you want to add paragraphs -->
+      </article>
+
+      <footer>
+        <p>Posted by: Phillip Barnett</p>
+      </footer>
+
+      <nav ID="enumerable-prev">
+        <a href="#"><img src="../imgs/Previous-icon.png" alt="Previous Button"/></a>
+      </nav>
+
+      <nav ID="enumerable-next">
+        <a href="css-concepts.html"><img src="../imgs/Next-icon.png" alt="Next Button"/></a>
+      </nav>
+
+    </main>
+
+    <section>
+      <footer>
+        <!--The site footer that is the same for everypage -->
+      </footer>
+    </section>
+
+  </body>
+
+
+</HTML>

@@ -14,10 +14,15 @@ header {
   order: 1px solid black
 }
 
-section>h1 {
+section>a>h1 {
   font-size: 40px;
   font-family: cursive;
   margin: 0;
+  color: black;
+}
+
+header>section>a {
+  text-decoration: none;
 }
 
 #icons {

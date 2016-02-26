@@ -1,8 +1,8 @@
-main {
+/*main {
   height: 1000px;
   width: 100%;
   order: 1px solid green;
-}
+}*/
 
 main>h2 {
   position: relative;
@@ -11,12 +11,18 @@ main>h2 {
   text-align: center;
   top: -1000px;
 }
+
 main>ul {
   position:relative;
   width: 40%;
   font-size: 30px;
   margin-left: 30%;
+
   top: -965px;
+}
+
+#month {
+  padding-top: 20px;
 }
 
 main>div {
